@@ -1,0 +1,19 @@
+# antigen
+source ~/.jangho/apps/zsh/antigen/antigen.zsh
+
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen theme bira
+
+antigen apply
+
+# avoid dangers
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -i'
+
+# taskwarrior
+alias t='task'
