@@ -1,0 +1,237 @@
+" required by vim-plug
+    call plug#begin('~/.vim/plugged')
+
+" Plugins
+    Plug 'Yggdroot/indentLine'
+    Plug 'SirVer/ultisnips'
+    Plug 'taglist.vim'
+    Plug 'plasticboy/vim-markdown'
+    Plug 'perl-support.vim'
+    Plug 'tpope/vim-fugitive'
+    Plug 'Lokaltog/vim-easymotion'
+    Plug 'bling/vim-airline'
+    Plug 'scrooloose/nerdtree'
+    Plug 'klen/python-mode'
+    Plug 'tpope/vim-surround'
+    Plug 'scrooloose/nerdcommenter'
+    Plug 'garbas/vim-snipmate'
+    Plug 'scrooloose/syntastic'
+    Plug 'othree/html5.vim'
+    Plug 'tpope/vim-haml'
+    Plug 'groenewege/vim-less'
+    Plug 'derekwyatt/vim-scala'
+    Plug 'nono/vim-handlebars'
+    Plug 'tpope/vim-rails'
+    Plug 'mklabs/grunt.vim'
+    Plug 'vim-ruby/vim-ruby'
+    Plug 'pangloss/vim-javascript'
+    Plug 'kchmck/vim-coffee-script'
+    Plug 'tomtom/tlib_vim'
+    Plug 'MarcWeber/vim-addon-mw-utils'
+    Plug 'honza/vim-snippets'
+
+" required by vim-plug
+    call plug#end()
+
+" general
+    set encoding=utf-8
+    set nocompatible
+    filetype plugin indent on
+
+" 단축키 설정
+    " NERDTree
+        map <F2> :NERDTreeToggle<CR>
+    " ctags
+        nmap <F8> :Tlist<CR>
+    " syntastic
+        nmap <F9> :call ToggleErrors(<CR>)
+    " 영역이 지정된 상태에서 Tab과 Shift-Tab으로 들여쓰기, 내어쓰기를 할 수 있도록 함
+        vmap <Tab> >gv
+        vmap <S-Tab> <gv
+    " Shift-Enter로 새 줄 열기
+        imap <S-CR> <ESC>o
+
+" 탭을 4자의 공백으로 설정
+    set shiftwidth=4
+    set softtabstop=4
+    set expandtab
+
+" 검색 관련 설정
+    " 검색어 강조
+        set hlsearch
+    " 검색시 파일 끝에서 처음으로 되돌리기 안함
+        set nowrapscan
+    " 검색시 대소문자를 구별하지 않음
+        set ignorecase
+    " <Space>로 검색이 가능하게 함.
+        map <space> /
+
+" 괄호 자동 완성
+    map! () ()<ESC>i
+    map! (); ();<ESC>hi
+    map! (): ():<ESC>hi
+    map! (<Space> ()<ESC>la
+    map! (<CR> (<CR>)<ESC>O
+
+    map! [] []<ESC>i
+    map! []; [];<ESC>hi
+    map! [<Space> []<ESC>la
+    map! [<CR> [<CR>]<ESC>O
+
+    map! {} {}<ESC>i
+    map! {}; {};<ESC>hi
+    map! {<Space> {}<ESC>la
+    map! {<CR> {<CR>}<ESC>O
+
+    map! <> <><ESC>i
+
+    map! '' ''<ESC>i
+    map! ''; '';<ESC>hi
+
+    map! "" ""<ESC>i
+    map! ""; "";<ESC>hi
+
+    map! [[]] [[]]<ESC>i
+    map! [[<Space> [[]]<ESC>li
+
+" 짝 추가
+    set matchpairs+=“:”
+    set matchpairs+=‘:’
+    set showmatch
+
+" 문법 강조
+    filetype plugin on
+    filetype indent on
+    color desert
+    syntax on
+
+" 편집 인터페이스
+    " 삑소리 대신 번쩍이기
+        set visualbell
+    " vim에서 마우스 사용 가능
+        " set mouse=a
+    " 파일 경로에 따라 자동으로 디렉토리 변경
+        set autochdir
+    " 완성 중인 명령을 표시
+        set showcmd
+    " 줄 번호 표시
+        set number
+    " 줄 번호 표시 너비 설정
+        set numberwidth=5
+    " highlight trailing whitespace
+        match ErrorMsg '\s\+$'
+
+" *.jangho 필기
+    au BufRead,BufNewFile *.jangho set filetype=mkd
+    au BufRead,BufNewFile *.jangho set sts=2
+    au BufRead,BufNewFile *.jangho set sw=2
+
+" *.bsv (bluespec)
+    au BufRead,BufNewFile *.bsv set sts=2
+    au BufRead,BufNewFile *.bsv set sw=2
+
+" 들여쓰기
+    set autoindent
+    set smartindent
+
+" 코드 폴딩 내역 자동 저장 및 불러오기
+    au BufWinLeave *.* mkview
+    au BufWinEnter *.* silent loadview
+
+" 자동 주석 제거
+    autocmd FileType * setlocal formatoptions-=ro
+
+" airline
+    set laststatus=2
+    set noshowmode
+    set t_Co=256
+    let g:airline_theme='badwolf'
+    let g:airline#extensions#tabline#enabled = 0
+
+" vertical line indentation
+    let g:indentLine_color_term = 239
+    let g:indentLine_color_gui = '#AAA'
+    let g:indentLine_char = '│'
+
+" PyMode
+    " rf. http://unlogic.co.uk/2013/02/08/vim-as-a-python-ide/
+    " Python-mode
+    " Activate rope
+    " Keys:
+    " K             Show python docs
+    " <Ctrl-Space>  Rope autocomplete
+    " <Ctrl-c>g     Rope goto definition
+    " <Ctrl-c>d     Rope show documentation
+    " <Ctrl-c>f     Rope find occurrences
+    " <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
+    " [[            Jump on previous class or function (normal, visual, operator modes)
+    " ]]            Jump on next class or function (normal, visual, operator modes)
+    " [M            Jump on previous class or method (normal, visual, operator modes)
+    " ]M            Jump on next class or method (normal, visual, operator modes)
+    let g:pymode_rope = 1
+
+    " Documentation
+    let g:pymode_doc = 1
+    let g:pymode_doc_key = 'K'
+
+    "Linting
+    let g:pymode_lint = 1
+    let g:pymode_lint_checker = "pyflakes,pep8"
+    " Auto check on save
+    let g:pymode_lint_write = 1
+
+    " Support virtualenv
+    let g:pymode_virtualenv = 1
+
+    " Enable breakpoints plugin
+    let g:pymode_breakpoint = 1
+    let g:pymode_breakpoint_key = '<leader>b'
+
+    " syntax highlighting
+    let g:pymode_syntax = 1
+    let g:pymode_syntax_all = 1
+    let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+    let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+    " Don't autofold code
+    let g:pymode_folding = 0
+
+" syntastic
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_enable_signs = 1
+    let g:syntastic_cpp_check_header = 1
+
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+
+    highlight SyntasticErrorSign guifg=white guibg=red
+    highlight SyntasticErrorLine guibg=#2f0000
+
+    let g:syntastic_c_compiler = 'gcc'
+
+    let g:syntastic_cpp_compiler = 'g++'
+    let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
+    let g:loaded_syntastic_cpp11_gcc_checker = 1
+    let g:syntastic_cpp11_compiler = executable('g++') ? 'g++' : 'clang++'
+    let g:syntastic_cpp_include_dirs = [ '../external/glfw-3.0.3/include/GLFW/', 'external/glfw-3.0.3/include/GLFW/', 'external/glm-0.9.4.0/', '../external/glm-0.9.4.0/', 'external/glew-1.9.0/include/' , '../external/glew-1.9.0/include/' ]
+
+    function! ToggleErrors()
+        let old_last_winnr = winnr('$')
+        lclose
+        if old_last_winnr == winnr('$')
+            " Nothing was closed, open syntastic error location panel
+            Errors
+        endif
+    endfunction
+
+" SirVer/ultisnips
+    " Trigger configuration. Do not use <tab> if you use
+    " https://github.com/Valloric/YouCompleteMe.
+    let g:UltiSnipsExpandTrigger="<tab>"
+    let g:UltiSnipsJumpForwardTrigger="<c-b>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+    " If you want :UltiSnipsEdit to split your window.
+    let g:UltiSnipsEditSplit="vertical"

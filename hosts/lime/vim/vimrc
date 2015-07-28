@@ -1,0 +1,7 @@
+" common vimrc
+    source ~/.jangho/apps/vim/vimrc
+
+" encryption settings
+    if filereadable("/run/media/jangho/JangHo-secure/vimrc_encryption")
+        source /run/media/jangho/JangHo-secure/vimrc_encryption
+    endif
