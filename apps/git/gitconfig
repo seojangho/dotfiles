@@ -1,0 +1,6 @@
+[user]
+	name = JangHo Seo
+	email = jangho@jangho.kr
+[core]
+	editor = nano
+	quotepath = false
