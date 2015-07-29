@@ -29,6 +29,7 @@
     Plug 'tomtom/tlib_vim'
     Plug 'MarcWeber/vim-addon-mw-utils'
     Plug 'honza/vim-snippets'
+    Plug 'vimwiki/vimwiki'
 
 " required by vim-plug
     call plug#end()
@@ -152,6 +153,9 @@
     let g:indentLine_color_term = 239
     let g:indentLine_color_gui = '#AAA'
     let g:indentLine_char = '│'
+
+" vimwiki
+    let g:vimwiki_list = [{'path': '~/wiki/', 'path_html': '~/wiki_html/'}]
 
 " PyMode
     " rf. http://unlogic.co.uk/2013/02/08/vim-as-a-python-ide/
