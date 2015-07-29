@@ -17,3 +17,6 @@ alias rm='rm -i'
 
 # taskwarrior
 alias t='task'
+
+# ssh
+alias mango='mosh --ssh="ssh -p 50022" my.jangho.kr'
