@@ -1,3 +1,9 @@
+# general
+DEFAULT_HOSTNAME=lime
+if [[ $(hostname) == $DEFAULT_HOSTNAME ]]; then
+    DEFAULT_USER=jangho
+fi
+
 # antigen
 source ~/.jangho/apps/zsh/antigen/antigen.zsh
 
@@ -6,7 +12,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme bira
+antigen theme agnoster
 
 antigen apply
 
