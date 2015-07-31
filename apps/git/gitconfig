@@ -2,5 +2,5 @@
 	name = JangHo Seo
 	email = jangho@jangho.kr
 [core]
-	editor = nano
+	editor = vim
 	quotepath = false
