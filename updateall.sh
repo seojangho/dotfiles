@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-(cd ~/.jangho/hosts/$(hostname); find -name "update.sh" -exec {} \;)
+(cd ~/.jangho/hosts/$(hostname); find -L -name "update.sh" -exec {} \;)
