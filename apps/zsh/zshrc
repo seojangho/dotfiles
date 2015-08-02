@@ -23,10 +23,12 @@ alias update='~/.jangho/updateall.sh'
 
 # ssh
 alias mango='mosh --ssh="ssh -p 50022" my.jangho.kr'
-alias x='echo $?'
 
 # fzf
 source ~/.fzf.zsh
+
+# exit status
+alias x='echo $?'
 
 # host-specific settings
 [ -r ~/.jangho/hosts/$(hostname)/zsh/zshrc_host ] && source ~/.jangho/hosts/$(hostname)/zsh/zshrc_host
