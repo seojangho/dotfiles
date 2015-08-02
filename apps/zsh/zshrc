@@ -18,6 +18,9 @@ alias rm='rm -i'
 # taskwarrior
 alias t='task'
 
+# update
+alias update='~/.jangho/updateall.sh'
+
 # ssh
 alias mango='mosh --ssh="ssh -p 50022" my.jangho.kr'
 alias x='echo $?'
