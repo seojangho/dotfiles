@@ -2,6 +2,3 @@
     if filereadable("/run/media/jangho/JangHo-secure/vimrc_encryption")
         source /run/media/jangho/JangHo-secure/vimrc_encryption
     endif
-
-" powerline font
-    let g:airline_powerline_fonts = 1
