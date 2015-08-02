@@ -23,6 +23,7 @@ alias update='~/.jangho/updateall.sh'
 
 # ssh
 alias mango='mosh --ssh="ssh -p 50022" my.jangho.kr'
+alias martini='mosh janghose@martini.snucse.org'
 
 # fzf
 source ~/.fzf.zsh
