@@ -1,0 +1,1 @@
+../../../apps/zsh/update.sh
