@@ -8,27 +8,11 @@
     Plug 'plasticboy/vim-markdown'
     Plug 'perl-support.vim'
     Plug 'tpope/vim-fugitive'
-    Plug 'Lokaltog/vim-easymotion'
     Plug 'bling/vim-airline'
     Plug 'scrooloose/nerdtree'
-    Plug 'klen/python-mode'
     Plug 'tpope/vim-surround'
-    Plug 'scrooloose/nerdcommenter'
-    Plug 'garbas/vim-snipmate'
     Plug 'scrooloose/syntastic'
     Plug 'othree/html5.vim'
-    Plug 'tpope/vim-haml'
-    Plug 'groenewege/vim-less'
-    Plug 'derekwyatt/vim-scala'
-    Plug 'nono/vim-handlebars'
-    Plug 'tpope/vim-rails'
-    Plug 'mklabs/grunt.vim'
-    Plug 'vim-ruby/vim-ruby'
-    Plug 'pangloss/vim-javascript'
-    Plug 'kchmck/vim-coffee-script'
-    Plug 'tomtom/tlib_vim'
-    Plug 'MarcWeber/vim-addon-mw-utils'
-    Plug 'honza/vim-snippets'
     Plug 'vimwiki/vimwiki'
 
 " required by vim-plug
@@ -122,25 +106,9 @@
     " highlight trailing whitespace
         match ErrorMsg '\s\+$'
 
-" *.jangho 필기
-    au BufRead,BufNewFile *.jangho set filetype=mkd
-    au BufRead,BufNewFile *.jangho set sts=2
-    au BufRead,BufNewFile *.jangho set sw=2
-
-" *.bsv (bluespec)
-    au BufRead,BufNewFile *.bsv set sts=2
-    au BufRead,BufNewFile *.bsv set sw=2
-
 " 들여쓰기
     set autoindent
     set smartindent
-
-" 코드 폴딩 내역 자동 저장 및 불러오기
-    au BufWinLeave *.* mkview
-    au BufWinEnter *.* silent loadview
-
-" 자동 주석 제거
-    autocmd FileType * setlocal formatoptions-=ro
 
 " airline
     set laststatus=2
@@ -156,49 +124,6 @@
 
 " vimwiki
     let g:vimwiki_list = [{'path': '~/wiki/', 'path_html': '~/wiki_html/'}]
-
-" PyMode
-    " rf. http://unlogic.co.uk/2013/02/08/vim-as-a-python-ide/
-    " Python-mode
-    " Activate rope
-    " Keys:
-    " K             Show python docs
-    " <Ctrl-Space>  Rope autocomplete
-    " <Ctrl-c>g     Rope goto definition
-    " <Ctrl-c>d     Rope show documentation
-    " <Ctrl-c>f     Rope find occurrences
-    " <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
-    " [[            Jump on previous class or function (normal, visual, operator modes)
-    " ]]            Jump on next class or function (normal, visual, operator modes)
-    " [M            Jump on previous class or method (normal, visual, operator modes)
-    " ]M            Jump on next class or method (normal, visual, operator modes)
-    let g:pymode_rope = 1
-
-    " Documentation
-    let g:pymode_doc = 1
-    let g:pymode_doc_key = 'K'
-
-    "Linting
-    let g:pymode_lint = 1
-    let g:pymode_lint_checker = "pyflakes,pep8"
-    " Auto check on save
-    let g:pymode_lint_write = 1
-
-    " Support virtualenv
-    let g:pymode_virtualenv = 1
-
-    " Enable breakpoints plugin
-    let g:pymode_breakpoint = 1
-    let g:pymode_breakpoint_key = '<leader>b'
-
-    " syntax highlighting
-    let g:pymode_syntax = 1
-    let g:pymode_syntax_all = 1
-    let g:pymode_syntax_indent_errors = g:pymode_syntax_all
-    let g:pymode_syntax_space_errors = g:pymode_syntax_all
-
-    " Don't autofold code
-    let g:pymode_folding = 0
 
 " syntastic
     let g:syntastic_check_on_open = 1
