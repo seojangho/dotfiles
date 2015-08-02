@@ -1,9 +1,3 @@
-# general
-DEFAULT_HOSTNAME=lime
-if [[ $(hostname) == $DEFAULT_HOSTNAME ]]; then
-    DEFAULT_USER=jangho
-fi
-
 # antigen
 source ~/.jangho/apps/zsh/antigen/antigen.zsh
 
@@ -30,3 +24,9 @@ alias x='echo $?'
 
 # fzf
 source ~/.fzf.zsh
+
+# host-specific settings
+[ -r ~/.jangho/hosts/$(hostname)/zsh/zshrc_host ] && source ~/.jangho/hosts/$(hostname)/zsh/zshrc_host
+
+# okay to go
+true
