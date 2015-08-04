@@ -25,6 +25,9 @@ alias update='~/.jangho/updateall.sh'
 alias mango='mosh --ssh="ssh -p 50022" jangho@my.jangho.kr'
 alias martini='mosh janghose@martini.snucse.org'
 
+# strong pwgen
+alias spwgen='pwgen -y -1 40 5'
+
 # fzf
 source ~/.fzf.zsh
 
