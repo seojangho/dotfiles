@@ -1,0 +1,1 @@
+../../../apps/task/install-arch.sh
