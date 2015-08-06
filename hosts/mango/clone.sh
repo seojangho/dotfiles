@@ -11,5 +11,5 @@ rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/public_html ./ 2>>$path_backu
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/jangho.git ./ 2>>$path_backup_logfile
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/jangho-secure.git ./ 2>>$path_backup_logfile
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/jangho-wiki.git ./ 2>>$path_backup_logfile
-rsync -rltDh --delete --chmod=ugo=rwX /var/lib/taskd/orgs ./ 2>>$path_backup_logfile
-rsync -rltDh --delete --chmod=ugo=rwX /var/lib/znc/.znc/moddata/log ./ 2>>$path_backup_logfile
+rsync -rltDh --chmod=ugo=rwX /var/lib/taskd/orgs ./ 2>>$path_backup_logfile
+rsync -rltDh --chmod=ugo=rwX /var/lib/znc/.znc/moddata/log ./ 2>>$path_backup_logfile
