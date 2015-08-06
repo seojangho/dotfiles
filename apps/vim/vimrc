@@ -2,6 +2,12 @@
     call plug#begin('~/.vim/plugged')
 
 " Plugins
+    Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+    Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
+    Plug 'pangloss/vim-javascript'
+    Plug 'tikhomirov/vim-glsl'
+    Plug 'evanmiller/nginx-vim-syntax'
+    Plug 'stephpy/vim-yaml'
     Plug 'Yggdroot/indentLine'
     Plug 'SirVer/ultisnips'
     Plug 'taglist.vim'
