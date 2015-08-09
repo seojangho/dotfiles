@@ -10,6 +10,9 @@ antigen theme agnoster
 
 antigen apply
 
+# path
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
 # avoid dangers
 alias mv='mv -i'
 alias cp='cp -i'
