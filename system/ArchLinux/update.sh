@@ -1,1 +1,2 @@
 yaourt -Syua
+gem update
