@@ -10,7 +10,6 @@ cd /mnt/mango-HDD/Clone/mango
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/public_html ./ 2>>$path_backup_logfile
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/jangho.git ./ 2>>$path_backup_logfile
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/jangho-secure.git ./ 2>>$path_backup_logfile
-rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/jangho-wiki.git ./ 2>>$path_backup_logfile
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/docs-jangho.git ./ 2>>$path_backup_logfile
 rsync -rltDh --delete --chmod=ugo=rwX /home/jangho/journal-jangho.git ./ 2>>$path_backup_logfile
 rsync -rltDh --chmod=ugo=rwX /var/lib/taskd/orgs ./ 2>>$path_backup_logfile
