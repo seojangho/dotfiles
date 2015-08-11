@@ -32,7 +32,7 @@ alias martini='mosh janghose@martini.snucse.org'
 alias spwgen='pwgen -y -1 40 5'
 
 # fzf
-source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # exit status
 alias x='echo $?'
