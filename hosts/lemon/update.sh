@@ -1,0 +1,1 @@
+../../system/MSYS2/update.sh
