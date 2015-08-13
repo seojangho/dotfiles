@@ -111,6 +111,8 @@
         set numberwidth=5
     " highlight trailing whitespace
         match ErrorMsg '\s\+$'
+    " allow backspacing over everything in insert mode
+        set backspace=indent,eol,start
 
 " 들여쓰기
     set autoindent
