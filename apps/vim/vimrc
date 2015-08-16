@@ -21,6 +21,7 @@
     Plug 'othree/html5.vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
     Plug 'cespare/vim-toml'
+    Plug 'jiangmiao/auto-pairs'
 
 " required by vim-plug
     call plug#end()
@@ -57,34 +58,6 @@
         set ignorecase
     " <Space>로 검색이 가능하게 함.
         map <space> /
-
-" 괄호 자동 완성
-    map! () ()<ESC>i
-    map! (); ();<ESC>hi
-    map! (): ():<ESC>hi
-    map! (<Space> ()<ESC>la
-    map! (<CR> (<CR>)<ESC>O
-
-    map! [] []<ESC>i
-    map! []; [];<ESC>hi
-    map! [<Space> []<ESC>la
-    map! [<CR> [<CR>]<ESC>O
-
-    map! {} {}<ESC>i
-    map! {}; {};<ESC>hi
-    map! {<Space> {}<ESC>la
-    map! {<CR> {<CR>}<ESC>O
-
-    map! <> <><ESC>i
-
-    map! '' ''<ESC>i
-    map! ''; '';<ESC>hi
-
-    map! "" ""<ESC>i
-    map! ""; "";<ESC>hi
-
-    map! [[]] [[]]<ESC>i
-    map! [[<Space> [[]]<ESC>li
 
 " 짝 추가
     set matchpairs+=“:”
