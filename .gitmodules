@@ -1,3 +1,6 @@
 [submodule "apps/zsh/antigen"]
 	path = apps/zsh/antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule "apps/zsh/zgen"]
+	path = apps/zsh/zgen
+	url = https://github.com/tarjoilija/zgen.git
