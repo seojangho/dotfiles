@@ -20,6 +20,7 @@
     Plug 'scrooloose/syntastic'
     Plug 'othree/html5.vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+    Plug 'cespare/vim-toml'
 
 " required by vim-plug
     call plug#end()
