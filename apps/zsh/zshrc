@@ -1,14 +1,16 @@
-# antigen
-source ~/.jangho/apps/zsh/antigen/antigen.zsh
+# zgen
+source ~/.jangho/apps/zsh/zgen/zgen.zsh
 
-antigen use oh-my-zsh
+if ! zgen saved; then
+    echo "Creating a zgen save"
 
-antigen bundle git
-antigen bundle zsh-users/zsh-syntax-highlighting
+    zgen oh-my-zsh
+    zgen oh-my-zsh plugins/git
+    zgen load zsh-users/zsh-syntax-highlighting
+    zgen oh-my-zsh themes/agnoster
 
-antigen theme agnoster
-
-antigen apply
+    zgen save
+fi
 
 # path
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
