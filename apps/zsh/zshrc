@@ -24,7 +24,7 @@ alias rm='rm -i'
 alias t='task'
 
 # update
-alias update='~/.jangho/updateall.sh'
+alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall.sh; ~/.jangho/updateall.sh'
 
 # ssh
 alias mango='mosh --ssh="ssh -p 50022" jangho@my.jangho.kr'
