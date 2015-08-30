@@ -23,15 +23,15 @@ taskd.certificate=\/home\/jangho\/.task\/jangho.cert
 taskd.key=\/home\/jangho\/.task\/jangho.key
 taskd.server=my.jangho.kr:53589
 
-# custom report p
-report.p.description=placeholders - think of detailed design and expand them asap
-report.p.filter=(status:pending or status:waiting) and +p
-report.p.columns=id,status,due.remaining,description,tags,project
-report.p.labels=ID,Status,Due,Description,Tags,Project
-report.p.sort=urgency-
+# custom report etc
+report.etc.description=not an immediate task but needs planning
+report.etc.filter=((status:pending or status:waiting) and +p) or (status:pending -p +BLOCKED)
+report.etc.columns=id,status,due.remaining,description,tags,project
+report.etc.labels=ID,Status,Due,Description,Tags,Project
+report.etc.sort=urgency-
 
 # report next
-report.next.filter=status:pending -p
+report.next.filter=status:pending -p -BLOCKED
 report.next.columns=id,due.remaining,description,tags,project
 report.next.labels=ID,Due,Description,Tags,Project
 report.next.sort=urgency-

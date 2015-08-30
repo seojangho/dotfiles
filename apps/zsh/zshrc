@@ -22,7 +22,7 @@ alias rm='rm -i'
 
 # taskwarrior
 alias t='task'
-alias tt='task p'
+alias tt='task etc'
 alias tw='task away'
 alias ta='task active'
 alias ts='task sync'
