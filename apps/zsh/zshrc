@@ -22,6 +22,10 @@ alias rm='rm -i'
 
 # taskwarrior
 alias t='task'
+alias tt='task p'
+alias tw='task away'
+alias ta='task active'
+alias ts='task sync'
 
 # update
 alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall.sh; ~/.jangho/updateall.sh'

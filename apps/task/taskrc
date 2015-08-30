@@ -22,4 +22,33 @@ taskd.ca=\/home\/jangho\/.task\/ca.cert
 taskd.certificate=\/home\/jangho\/.task\/jangho.cert
 taskd.key=\/home\/jangho\/.task\/jangho.key
 taskd.server=my.jangho.kr:53589
-urgency.tags.coefficient== 0
+
+# custom report p
+report.p.description=placeholders - think of detailed design and expand them asap
+report.p.filter=(status:pending or status:waiting) and +p
+report.p.columns=id,status,due.remaining,description,tags,project
+report.p.labels=ID,Status,Due,Description,Tags,Project
+report.p.sort=urgency-
+
+# report next
+report.next.filter=status:pending -p
+report.next.columns=id,due.remaining,description,tags,project
+report.next.labels=ID,Due,Description,Tags,Project
+report.next.sort=urgency-
+
+# custom report away
+report.away.filter=away - when I leave Gwanak
+report.away.filter=(status:pending or status:waiting) and +away
+report.away.columns=id,status,due.remaining,until.remaining,description,tags,project
+report.away.labels=ID,Status,from,to,Description,Tags,Project
+report.away.sort=urgency-
+
+# report active
+report.active.filter=(status:pending or status:waiting) and +ACTIVE
+report.active.columns=id,status,due.remaining,description,tags,project
+report.active.labels=ID,Status,Due,Description,Tags,Project
+report.active.sort=urgency-
+
+# others
+urgency.tags.coefficient=0.0
+urgency.user.tag.bacchus.coefficient=5.0
