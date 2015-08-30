@@ -22,3 +22,4 @@ taskd.ca=\/home\/jangho\/.task\/ca.cert
 taskd.certificate=\/home\/jangho\/.task\/jangho.cert
 taskd.key=\/home\/jangho\/.task\/jangho.key
 taskd.server=my.jangho.kr:53589
+urgency.tags.coefficient== 0
