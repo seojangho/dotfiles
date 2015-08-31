@@ -36,6 +36,12 @@ report.next.columns=id,due.remaining,description,tags,project
 report.next.labels=ID,Due,Description,Tags,Project
 report.next.sort=urgency-
 
+# report minimal
+report.minimal.filter=status:pending -p -BLOCKED
+report.minimal.columns=id,description
+report.minimal.labels=ID,Description
+report.minimal.sort=urgency-
+
 # custom report away
 report.away.filter=away - when I leave Gwanak
 report.away.filter=(status:pending or status:waiting) and +away
