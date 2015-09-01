@@ -1,0 +1,1 @@
+../../../apps/task/no-color.install.sh
