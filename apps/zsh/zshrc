@@ -26,7 +26,7 @@ alias tt='task etc'
 alias tw='task away'
 alias ta='task active'
 alias ts='task sync'
-alias tm='task minimal'
+alias tm='task minimal -class'
 
 # update
 alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall.sh; ~/.jangho/updateall.sh'
