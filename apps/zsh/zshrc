@@ -1,5 +1,5 @@
 # zgen
-source ~/.jangho/apps/zsh/zgen/zgen.zsh
+source ~/.zgen.repo/zgen.zsh
 
 if ! zgen saved; then
     echo "Creating a zgen save"
