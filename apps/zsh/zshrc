@@ -13,7 +13,7 @@ if ! zgen saved; then
 fi
 
 # path
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+PATH="~/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # avoid dangers
 alias mv='mv -i'
