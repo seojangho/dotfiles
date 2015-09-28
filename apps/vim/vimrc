@@ -84,8 +84,6 @@
         set visualbell
     " vim에서 마우스 사용 가능
         " set mouse=a
-    " 파일 경로에 따라 자동으로 디렉토리 변경
-        set autochdir
     " 완성 중인 명령을 표시
         set showcmd
     " 줄 번호 표시
