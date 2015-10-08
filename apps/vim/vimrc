@@ -91,7 +91,7 @@
     " 줄 번호 표시 너비 설정
         set numberwidth=5
     " highlight trailing whitespace
-        au BufReadPre,BufRead,BufNewFile * match ErrorMsg '\s\+$'
+        au BufRead,BufEnter * match ErrorMsg '\s\+$'
     " allow backspacing over everything in insert mode
         set backspace=indent,eol,start
 
