@@ -1,2 +1,3 @@
 DEFAULT_USER=jangho
 export USE_CCACHE=1 # for building Android
+PATH=~/bin:$PATH
