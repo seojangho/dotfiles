@@ -33,7 +33,7 @@ alias tv='task active'
 alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall.sh; ~/.jangho/updateall.sh'
 
 # ssh
-alias mango='mosh --ssh="ssh -p 50022" jangho@my.jangho.kr'
+alias mango='mosh --ssh="ssh -p 50022" jangho@mango.jangho.kr'
 alias kiwi='mosh jangho@kiwi.jangho.kr'
 alias martini='mosh janghose@martini.snucse.org'
 

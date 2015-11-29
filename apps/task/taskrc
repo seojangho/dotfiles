@@ -21,7 +21,7 @@ taskd.credentials=Users\/jangho\/b4ad4749-76ee-4c32-a22c-3e147f4be68d
 taskd.ca=\/home\/jangho\/.task\/ca.cert
 taskd.certificate=\/home\/jangho\/.task\/jangho.cert
 taskd.key=\/home\/jangho\/.task\/jangho.key
-taskd.server=my.jangho.kr:53589
+taskd.server=mango.jangho.kr:53589
 
 # custom report etc
 report.etc.description=not an immediate task but needs planning
