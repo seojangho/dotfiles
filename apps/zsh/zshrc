@@ -1,3 +1,6 @@
+# oh-my-zsh settings
+DISABLE_AUTO_UPDATE=true
+
 # zgen
 source ~/.zgen.repo/zgen.zsh
 
