@@ -39,6 +39,7 @@ alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall
 alias mango='mosh --ssh="ssh -p 50022" jangho@mango.jangho.kr'
 alias kiwi='mosh jangho@kiwi.jangho.kr'
 alias martini='mosh janghose@martini.snucse.org'
+alias rssh='ssh 147.46.215.152 -p1832 -ljhsuh'
 
 # strong pwgen
 alias spwgen='pwgen -y -1 40 5'
