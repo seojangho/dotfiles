@@ -41,6 +41,9 @@ alias kiwi='mosh jangho@kiwi.jangho.kr'
 alias martini='mosh janghose@martini.snucse.org'
 alias rssh='ssh 147.46.215.152 -p1832 -ljhsuh'
 
+# open
+alias open='xdg-open'
+
 # strong pwgen
 alias spwgen='pwgen -y -1 40 5'
 
