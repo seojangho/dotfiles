@@ -5,8 +5,6 @@ DISABLE_AUTO_UPDATE=true
 source ~/.zgen.repo/zgen.zsh
 
 if ! zgen saved; then
-    echo "Creating a zgen save"
-
     zgen oh-my-zsh
     zgen oh-my-zsh plugins/git
     zgen load zsh-users/zsh-syntax-highlighting
