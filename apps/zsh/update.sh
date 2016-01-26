@@ -2,3 +2,4 @@
 source ~/.zshrc
 zgen selfupdate
 zgen update
+zgen reset
