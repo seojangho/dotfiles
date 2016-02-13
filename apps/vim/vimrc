@@ -23,7 +23,6 @@
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
     Plug 'cespare/vim-toml'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'klen/python-mode'
 
 " required by vim-plug
     call plug#end()
