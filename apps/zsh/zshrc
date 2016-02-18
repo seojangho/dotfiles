@@ -54,6 +54,9 @@ alias x='echo $?'
 # nocolor
 alias nocolor=' sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g"'
 
+# op
+alias op='source ~/.jangho/apps/zsh/op'
+
 # host-specific settings
 [ -r ~/.jangho/hosts/$(hostname)/zsh/zshrc_host ] && source ~/.jangho/hosts/$(hostname)/zsh/zshrc_host
 
