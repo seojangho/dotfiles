@@ -1,1 +1,1 @@
-../../../apps/task/no-color.install.sh
+../../../apps/task/dark.install.sh
