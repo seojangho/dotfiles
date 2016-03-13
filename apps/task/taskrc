@@ -43,7 +43,7 @@ report.minimal.labels=ID,Description
 report.minimal.sort=urgency-
 
 # custom report away
-report.away.filter=away - when I leave Gwanak
+report.away.description=away - when I leave Gwanak
 report.away.filter=(status:pending or status:waiting) and +away
 report.away.columns=id,status,due.remaining,until.remaining,description,tags,project
 report.away.labels=ID,Status,from,to,Description,Tags,Project
