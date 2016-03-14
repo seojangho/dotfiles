@@ -24,6 +24,7 @@
     Plug 'cespare/vim-toml'
     Plug 'jiangmiao/auto-pairs'
     Plug 'blindFS/vim-taskwarrior'
+    Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 " required by vim-plug
     call plug#end()
@@ -54,6 +55,8 @@
         vmap <S-Tab> <gv
     " Shift-Enter로 새 줄 열기
         imap <S-CR> <ESC>o
+    " Ctrl+Enter 자동완성 (omnifunc)
+        inoremap <C-@> <C-x><C-o>
 
 " 탭을 4자의 공백으로 설정
     set shiftwidth=4
