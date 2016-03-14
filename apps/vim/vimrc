@@ -48,6 +48,8 @@
         imap <S-CR> <ESC>o
     " Ctrl+Enter 자동완성 (omnifunc)
         inoremap <C-@> <C-x><C-o>
+    " LaTeX 컴파일 & 보기
+	autocmd BufNewFile,BufRead *.tex map <F3> :Latexmk<CR>:LatexView<CR>
 
 " 탭을 4자의 공백으로 설정
     set shiftwidth=4
