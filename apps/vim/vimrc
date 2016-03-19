@@ -23,7 +23,7 @@
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
     Plug 'cespare/vim-toml'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'blindFS/vim-taskwarrior'
+    " Plug 'blindFS/vim-taskwarrior'
     Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 " required by vim-plug
