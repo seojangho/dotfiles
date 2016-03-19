@@ -16,6 +16,9 @@ fi
 # path
 PATH="$HOME/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
+# for agnoster theme
+DEFAULT_USER=jangho
+
 # avoid dangers
 alias mv='mv -i'
 alias cp='cp -i'
