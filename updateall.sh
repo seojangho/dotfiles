@@ -1,3 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+source ~/.jangho/hostid.sh
+
 (cd ~/.jangho; git pull origin master)
-(cd ~/.jangho/hosts/$(hostname); find -L -name "update.sh" -exec {} \;)
+(cd ~/.jangho/hosts/$HOSTID; find -L -name "update.sh" -exec {} \;)

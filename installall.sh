@@ -1,3 +1,6 @@
 #!/usr/bin/env sh
+
+source ~/.jangho/hostid.sh
+
 (cd ~/.jangho; git submodule init; git submodule update)
-(cd ~/.jangho/hosts/$(hostname); find -L -name "install.sh" -exec {} \;)
+(cd ~/.jangho/hosts/$HOSTID; find -L -name "install.sh" -exec {} \;)
