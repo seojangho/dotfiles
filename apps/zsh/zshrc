@@ -22,7 +22,7 @@ PATH="$HOME/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 DEFAULT_USER=jangho
 
 # zsh-autosuggest style
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=245'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=248'
 
 # avoid dangers
 alias mv='mv -i'
