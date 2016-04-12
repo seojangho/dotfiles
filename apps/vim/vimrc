@@ -25,6 +25,7 @@
     Plug 'jiangmiao/auto-pairs'
     " Plug 'blindFS/vim-taskwarrior'
     Plug 'LaTeX-Box-Team/LaTeX-Box'
+    Plug 'cbracken/vala.vim'
 
 " required by vim-plug
     call plug#end()
@@ -117,6 +118,7 @@
     let g:task_default_prompt = ['due', 'description', 'tag', 'depends']
 
 " syntastic
+    let g:syntastic_vala_modules=['gtk+-3.0']
     let g:syntastic_check_on_open = 1
     let g:syntastic_enable_signs = 1
     let g:syntastic_cpp_check_header = 1
