@@ -1,1 +1,0 @@
-../../../apps/vim/install.sh
