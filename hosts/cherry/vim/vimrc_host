@@ -2,3 +2,10 @@
     if filereadable("/run/media/jangho/JangHo-secure/vimrc_encryption")
         source /run/media/jangho/JangHo-secure/vimrc_encryption
     endif
+
+" OS Project
+    autocmd BufRead,BufNewFile ~/workspace/os-team9/*
+        \ set noet |
+        \ set ts=8 |
+        \ set sts=8 |
+        \ set sw=8
