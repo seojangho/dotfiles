@@ -57,6 +57,13 @@
     set softtabstop=4
     set expandtab
 
+" 단 HTML 편집시에는...
+    autocmd BufNewFile,BufRead *.html
+        \ set noet |
+        \ set ts=2 |
+        \ set sts=2 |
+        \ set sw=2
+
 " 검색 관련 설정
     " 검색어 강조
         set hlsearch
