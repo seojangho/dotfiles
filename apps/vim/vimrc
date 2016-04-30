@@ -64,6 +64,13 @@
         \ set sts=2 |
         \ set sw=2
 
+" 단 SCSS 편집시에는...
+    autocmd BufNewFile,BufRead *.scss
+        \ set noet |
+        \ set ts=4 |
+        \ set sts=4 |
+        \ set sw=4
+
 " 검색 관련 설정
     " 검색어 강조
         set hlsearch
