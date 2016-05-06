@@ -122,7 +122,7 @@
 
 " vertical line indentation
     let g:indentLine_color_term = 239
-    let g:indentLine_color_gui = '#AAA'
+    let g:indentLine_color_gui = '#AAAAAA'
     let g:indentLine_char = '│'
 
 " vimwiki
