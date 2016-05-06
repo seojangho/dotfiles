@@ -46,6 +46,7 @@ alias mango='mosh --ssh="ssh -p 50022" jangho@mango.jangho.kr'
 alias kiwi='mosh jangho@kiwi.jangho.kr'
 alias martini='mosh janghose@martini.snucse.org'
 alias rssh='ssh 147.46.215.152 -p1832 -ljhsuh'
+alias papaya='mosh jangho@papaya.jangho.kr'
 
 # open
 alias open='xdg-open'
