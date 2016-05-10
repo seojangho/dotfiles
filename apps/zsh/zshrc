@@ -1,6 +1,32 @@
 # oh-my-zsh settings
 DISABLE_AUTO_UPDATE=true
 
+# bullet-train
+export BULLETTRAIN_PROMPT_ROOT=false
+export BULLETTRAIN_PROMPT_CHAR="➜"
+export BULLETTRAIN_PROMPT_ADD_NEWLINE=false
+export BULLETTRAIN_STATUS_EXIT_SHOW=true
+export BULLETTRAIN_STATUS_BG='magenta'
+export BULLETTRAIN_TIME_SHOW=false
+export BULLETTRAIN_CONTEXT_SHOW=false
+if [[ $USERNAME != 'jangho' && $USERNAME != 'janghose' ]]
+then
+    export BULLETTRAIN_CUSTOM_MSG='%n'
+fi
+if (($+SSH_TTY))
+then
+    if [[ $BULLETTRAIN_CUSTOM_MSG == false ]]
+    then
+        export BULLETTRAIN_CUSTOM_MSG='%m'
+    else
+        export BULLETTRAIN_CUSTOM_MSG='%m@'$BULLETTRAIN_CUSTOM_MSG
+    fi
+fi
+if [[ $UID -eq 0 ]]
+then
+    export BULLETTRAIN_CUSTOM_BG='magenta'
+fi
+
 # zgen
 source ~/.zgen.repo/zgen.zsh
 
@@ -10,16 +36,13 @@ if ! zgen saved; then
     zgen load zsh-users/zsh-syntax-highlighting
     zgen load zsh-users/zsh-completions
     zgen load zsh-users/zsh-autosuggestions
-    zgen oh-my-zsh themes/agnoster
+    zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
     zgen save
 fi
 
 # path
 PATH="$HOME/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-
-# for agnoster theme
-DEFAULT_USER=jangho
 
 # zsh-autosuggest style
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
@@ -56,9 +79,6 @@ alias spwgen='pwgen -y -1 40 5'
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# exit status
-alias x='echo $?'
 
 # nocolor
 alias nocolor=' sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g"'
