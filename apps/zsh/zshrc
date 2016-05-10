@@ -6,7 +6,7 @@ export BULLETTRAIN_PROMPT_ROOT=false
 export BULLETTRAIN_PROMPT_CHAR="➜"
 export BULLETTRAIN_PROMPT_ADD_NEWLINE=false
 export BULLETTRAIN_STATUS_EXIT_SHOW=true
-export BULLETTRAIN_STATUS_BG='magenta'
+export BULLETTRAIN_STATUS_BG='red'
 export BULLETTRAIN_TIME_SHOW=false
 export BULLETTRAIN_CONTEXT_SHOW=false
 if [[ $USERNAME != 'jangho' && $USERNAME != 'janghose' ]]
@@ -24,7 +24,7 @@ then
 fi
 if [[ $UID -eq 0 ]]
 then
-    export BULLETTRAIN_CUSTOM_BG='magenta'
+    export BULLETTRAIN_CUSTOM_BG='red'
 fi
 
 # zgen
