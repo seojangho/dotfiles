@@ -15,7 +15,7 @@ then
 fi
 if (($+SSH_TTY))
 then
-    if [[ $BULLETTRAIN_CUSTOM_MSG == false ]]
+    if [[ $BULLETTRAIN_CUSTOM_MSG == "" ]]
     then
         export BULLETTRAIN_CUSTOM_MSG='%m'
     else
