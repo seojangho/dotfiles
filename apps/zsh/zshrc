@@ -10,7 +10,6 @@ export BULLETTRAIN_STATUS_BG='red'
 export BULLETTRAIN_TIME_SHOW=false
 export BULLETTRAIN_CONTEXT_SHOW=false
 export BULLETTRAIN_DIR_EXTENDED=2
-export BULLETTRAIN_NVM_SHOW=true
 export BULLETTRAIN_GO_SHOW=true
 if [[ $USERNAME != 'jangho' && $USERNAME != 'janghose' ]]
 then
