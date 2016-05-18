@@ -5,10 +5,10 @@ then
 else
     if [[ $HOSTNAME =~ 311-1-*  ]]
     then
-        HOSTID=snucse
+        HOSTID=snucse_lab
     elif [[ $HOSTNAME =~ 310-2-*  ]]
     then
-        HOSTID=snucse
+        HOSTID=snucse_lab
     else
         exit 1
     fi
