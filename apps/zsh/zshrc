@@ -14,6 +14,8 @@ export BULLETTRAIN_GO_SHOW=true
 if [[ $USERNAME != 'jangho' && $USERNAME != 'janghose' ]]
 then
     export BULLETTRAIN_CUSTOM_MSG='%n'
+else
+    export BULLETTRAIN_CUSTOM_MSG=''
 fi
 if (($+SSH_TTY))
 then
