@@ -104,5 +104,10 @@ bindkey ^@ clear-screen
 # host-specific settings
 [ -r ~/.jangho/hosts/$(hostname)/zsh/zshrc_host ] && source ~/.jangho/hosts/$(hostname)/zsh/zshrc_host
 
+# function that copies files to tmp.jangho.kr
+function tmp() {
+    scp -P50022 "$1" mango.jangho.kr:~/public_tmp/_/tmp
+}
+
 # okay to go
 true
