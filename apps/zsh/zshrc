@@ -106,7 +106,7 @@ bindkey ^@ clear-screen
 
 # function that copies files to tmp.jangho.kr
 function tmp() {
-    scp -P50022 "$1" mango.jangho.kr:~/public_tmp/_/tmp
+    scp -r -P50022 "$1" mango.jangho.kr:~/public_tmp/_/tmp
 }
 
 # okay to go
