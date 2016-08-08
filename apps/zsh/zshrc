@@ -58,6 +58,10 @@ PATH="$HOME/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 # zsh-autosuggest style
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # avoid dangers
 alias mv='mv -i'
 alias cp='cp -i'
