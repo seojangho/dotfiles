@@ -114,7 +114,7 @@ bindkey ^@ clear-screen
 
 # function that copies files to tmp.jangho.kr
 function tmp() {
-    scp -r -P50022 "$1" jangho@mango.jangho.kr:~/public_tmp/_/private
+    rsync -avz -e "ssh -p50022" "$1" jangho@mango.jangho.kr:~/public_tmp/_/private
 }
 
 # okay to go
