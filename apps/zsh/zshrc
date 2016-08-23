@@ -73,11 +73,9 @@ alias rm='rm -i'
 
 # taskwarrior
 alias t='task'
-alias tt='task etc'
-alias tw='task away'
+alias tw='vim +TW'
 alias ta='task add'
 alias ts='task sync'
-alias tm='task minimal -class'
 alias tv='task active'
 
 # update

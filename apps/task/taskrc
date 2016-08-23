@@ -23,31 +23,11 @@ taskd.certificate=\/home\/jangho\/.task\/jangho.cert
 taskd.key=\/home\/jangho\/.task\/jangho.key
 taskd.server=mango.jangho.kr:53589
 
-# custom report etc
-report.etc.description=not an immediate task but needs planning
-report.etc.filter=((status:pending or status:waiting) and +p) or (status:pending -p +BLOCKED)
-report.etc.columns=id,status,due.remaining,description,tags,project
-report.etc.labels=ID,Status,Due,Description,Tags,Project
-report.etc.sort=urgency-
-
 # report next
-report.next.filter=status:pending -p -BLOCKED
+report.next.filter=status:pending -BLOCKED
 report.next.columns=id,due.remaining,description,tags,project
 report.next.labels=ID,Due,Description,Tags,Project
 report.next.sort=urgency-
-
-# report minimal
-report.minimal.filter=status:pending -p -BLOCKED
-report.minimal.columns=id,description
-report.minimal.labels=ID,Description
-report.minimal.sort=urgency-
-
-# custom report away
-report.away.description=away - when I leave Gwanak
-report.away.filter=(status:pending or status:waiting) and +away
-report.away.columns=id,status,due.remaining,until.remaining,description,tags,project
-report.away.labels=ID,Status,from,to,Description,Tags,Project
-report.away.sort=urgency-
 
 # report active
 report.active.filter=(status:pending or status:waiting) and +ACTIVE
