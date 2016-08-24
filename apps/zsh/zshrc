@@ -80,6 +80,7 @@ alias s='task schedule wait.before:today+60days'
 function sa() {
     task add wait:$1 schedule:$1 due:$1 ${@:2}
 }
+alias tw='timew'
 
 # update
 alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall.sh; ~/.jangho/updateall.sh'
