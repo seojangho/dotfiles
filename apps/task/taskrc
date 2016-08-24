@@ -29,7 +29,15 @@ report.next.columns=id,due.remaining,description,tags,project
 report.next.labels=ID,Due,Description,Tags,Project
 report.next.sort=urgency-
 
+# report schedule
+report.schedule.description=list of waiting tasks
+report.schedule.filter=status:waiting
+report.schedule.columns=id,due.remaining,description,tags,project
+report.schedule.labels=ID,Due,Description,Tags,Project
+report.schedule.sort=urgency-
+
 # report active
+report.active.description=list of active tasks
 report.active.filter=(status:pending or status:waiting) and +ACTIVE
 report.active.columns=id,status,due.remaining,description,tags,project
 report.active.labels=ID,Status,Due,Description,Tags,Project

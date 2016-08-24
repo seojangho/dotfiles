@@ -72,11 +72,14 @@ alias cp='cp -i'
 alias rm='rm -i'
 
 # taskwarrior
-alias t='task'
-alias tw='vim +TW'
-alias ta='task add'
 alias ts='task sync'
 alias tv='task active'
+alias t='task'
+alias ta='task add'
+alias s='task schedule wait.before:today+60days'
+function sa() {
+    task add wait:$1 schedule:$1 due:$1+1day -- $2
+}
 
 # update
 alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall.sh; ~/.jangho/updateall.sh'
