@@ -78,7 +78,7 @@ alias t='task'
 alias ta='task add'
 alias s='task schedule wait.before:today+60days'
 function sa() {
-    task add wait:$1 schedule:$1 due:$1+1day ${@:2}
+    task add wait:$1 schedule:$1 due:$1 ${@:2}
 }
 
 # update
