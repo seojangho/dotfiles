@@ -55,6 +55,9 @@ fi
 # path
 PATH="$HOME/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
+# rubygem
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+
 # zsh-autosuggest style
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
