@@ -34,7 +34,7 @@ report.schedule.description=list of waiting tasks
 report.schedule.filter=status:waiting
 report.schedule.columns=id,wait.remaining,due.remaining,description,tags,project
 report.schedule.labels=ID,Start,Due,Description,Tags,Project
-report.schedule.sort=urgency-
+report.schedule.sort=wait+
 
 # report active
 report.active.description=list of active tasks
