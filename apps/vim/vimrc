@@ -112,6 +112,7 @@
 " 들여쓰기
     set autoindent
     set smartindent
+    set breakindent
 
 " airline
     set laststatus=2
