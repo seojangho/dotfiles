@@ -53,10 +53,10 @@ if ! zgen saved; then
 fi
 
 # path
-PATH="$HOME/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+command -v ruby >/dev/null 2>&1 && PATH="$HOME/.local/bin:$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # rubygem
-export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+command -v ruby >/dev/null 2>&1 && export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
 # zsh-autosuggest style
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
