@@ -124,5 +124,17 @@ function tmp() {
     rsync -avz -e "ssh -p50022" "$1" jangho@mango.jangho.kr:~/public_tmp/_/private
 }
 
+# OS Fall 2016
+if [ -d $HOME/.os ]
+then
+  for bin_dir in $HOME/.os/bin_dirs/*
+  do
+    if [ -d "${bin_dir}" ]
+    then
+      PATH=${bin_dir}:$PATH
+    fi
+  done
+fi
+
 # okay to go
 true
