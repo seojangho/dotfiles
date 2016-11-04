@@ -69,6 +69,8 @@ function nvm() {
     export BULLETTRAIN_NVM_SHOW=true
 }
 
+alias ls='ls --color=auto'
+
 # avoid dangers
 alias mv='mv -i'
 alias cp='cp -i'
