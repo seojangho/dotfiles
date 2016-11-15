@@ -27,6 +27,7 @@
     Plug 'LaTeX-Box-Team/LaTeX-Box'
     Plug 'cbracken/vala.vim'
     Plug 'HerringtonDarkholme/yats.vim'
+    Plug 'editorconfig/editorconfig-vim'
 
 " required by vim-plug
     call plug#end()
