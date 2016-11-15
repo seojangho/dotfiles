@@ -64,8 +64,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 # nvm
 function nvm() {
     unset -f nvm
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    source /usr/share/nvm/init-nvm.sh
     export BULLETTRAIN_NVM_SHOW=true
 }
 
