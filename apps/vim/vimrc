@@ -177,6 +177,9 @@
     " If you want :UltiSnipsEdit to split your window.
     let g:UltiSnipsEditSplit="vertical"
 
+" editorconfig
+    let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
 " host-specific settings
 if filereadable($HOME . "/.jangho/hosts/" . hostname() . "/vim/vimrc_host")
     exec "source " . $HOME . "/.jangho/hosts/" . hostname() . "/vim/vimrc_host"
