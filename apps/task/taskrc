@@ -19,8 +19,8 @@ include ~/.taskrc.theme
 # taskserver
 taskd.credentials=Users\/jangho\/b4ad4749-76ee-4c32-a22c-3e147f4be68d
 taskd.ca=\/home\/jangho\/.task\/ca.cert
-taskd.certificate=\/home\/jangho\/.task\/jangho.cert
-taskd.key=\/home\/jangho\/.task\/jangho.key
+taskd.certificate=\/home\/jangho\/.task\/client.cert
+taskd.key=\/home\/jangho\/.task\/client.key
 taskd.server=mango.jangho.kr:53589
 
 # report next
