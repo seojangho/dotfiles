@@ -91,13 +91,9 @@ alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall
 
 # ssh
 alias mango='mosh --ssh="ssh -p 50022" jangho@mango.jangho.kr'
-alias kiwi='mosh jangho@kiwi.jangho.kr'
 alias martini='mosh janghose@martini.snucse.org'
-alias rssh='ssh 147.46.215.152 -p1832 -ljhsuh'
 alias papaya='mosh jangho@papaya.jangho.kr'
 alias dev='mosh jangho@dev.snucse.org'
-alias cdng='ssh chundoong0.snu.ac.kr -lmc35'
-alias cdng2='ssh 147.46.219.228 -p2222 -lmc35'
 
 # open
 alias open='xdg-open'
