@@ -90,10 +90,10 @@ alias tw='timew'
 alias update='[ -f ~/.jangho-system/updateall.sh ] && ~/.jangho-system/updateall.sh; ~/.jangho/updateall.sh'
 
 # ssh
-alias mango='mosh --ssh="ssh -p 50022" jangho@mango.jangho.kr'
-alias martini='mosh janghose@martini.snucse.org'
-alias papaya='mosh jangho@papaya.jangho.kr'
-alias dev='mosh jangho@dev.snucse.org'
+alias mango='ssh -p50022 jangho@mango.jangho.kr'
+alias martini='ssh janghose@martini.snucse.org'
+alias papaya='ssh jangho@papaya.jangho.kr'
+alias dev='ssh jangho@dev.snucse.org'
 
 # open
 alias open='xdg-open'
