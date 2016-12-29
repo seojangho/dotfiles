@@ -119,7 +119,7 @@ bindkey ^@ clear-screen
 
 # function that copies files to tmp.jangho.kr
 function tmp() {
-    rsync -avz -e "ssh -p50022" "$1" jangho@mango.jangho.kr:~/public_tmp/_/private
+    rsync -avz -e "ssh -p50022" "$1" jangho@mango.jangho.kr:/mnt/mango-HDD/tmp_private/private
 }
 
 # OS Fall 2016
