@@ -9,9 +9,10 @@ export BULLETTRAIN_STATUS_EXIT_SHOW=true
 export BULLETTRAIN_STATUS_BG='red'
 export BULLETTRAIN_NVM_SHOW=false
 
-export BULLETTRAIN_PROMPT_ORDER=(
+BULLETTRAIN_PROMPT_ORDER=(
   status cmd_exec_time custom perl ruby virtualenv conditional_nvm
   go dir git hg)
+export BULLETTRAIN_PROMPT_ORDER
 
 function prompt_conditional_nvm() {
   if [[ $BULLETTRAIN_NVM_SHOW == true ]] then
