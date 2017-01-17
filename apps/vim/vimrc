@@ -26,7 +26,7 @@
     " Plug 'blindFS/vim-taskwarrior'
     Plug 'LaTeX-Box-Team/LaTeX-Box'
     Plug 'cbracken/vala.vim'
-    Plug 'HerringtonDarkholme/yats.vim'
+    Plug 'leafgarland/typescript-vim'
     Plug 'editorconfig/editorconfig-vim'
 
 " required by vim-plug
